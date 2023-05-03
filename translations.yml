@@ -1,0 +1,16 @@
+on:
+    branches:
+        - main
+pull_requests:
+    mode: pr_all_langs
+notification:
+    enabled: true
+    emails:
+        - 'haykhunaa@gmail.com'
+files:
+    - translation: professional
+      service_type: premium
+      source_pattern: README.md
+      source_locale: en-GB
+      target_pattern: /{{original_file_name}}_{{lang_2}}.md
+      target_locales: ['de-DE', 'it-IT', 'fr-FR', 'es-ES']
